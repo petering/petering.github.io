@@ -180,7 +180,7 @@
         
         <div class="page-template-content markdown-body">
             
-                <h2 id="1、八种基本数据类型都是值传递"><a href="#1、八种基本数据类型都是值传递" class="headerlink" title="1、八种基本数据类型都是值传递"></a>1、八种基本数据类型都是<font color=red>值传递</font></h2><p>形参是实参的拷贝，改变形参的值不会影响实参–单向传递</p>
+                <h2 id="1、八种基本数据类型都是值传递"><a href="#1、八种基本数据类型都是值传递" class="headerlink" title="1、八种基本数据类型都是值传递"></a>1、八种基本数据类型都是<font color="red">值传递</font></h2><p>形参是实参的拷贝，改变形参的值不会影响实参–单向传递</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">IntegerTest01</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">changeInt</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        ++value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        changeInt(a);</span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=1</span><br></pre></td></tr></table></figure>
@@ -254,7 +254,7 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=1</span><br></pre></td></tr></table></figure>
 
-<p>将基本参数类型<font color=red size =5>int</font>换成对象类型<font color=red size =5>Integer</font></p>
+<p>将基本参数类型<font color="red" size="5">int</font>换成对象类型<font color="red" size="5">Integer</font></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">IntegerTest02</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">changeInteger</span><span class="params">(Integer value)</span> &#123;</span><br><span class="line">        ++value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        changeInteger(a);</span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=2</span><br></pre></td></tr></table></figure>
@@ -263,7 +263,7 @@
 <p>基本类型只有栈没有堆；</p>
 <p>引用类型既有栈又有堆；</p>
 <p>java中除了 8个基本的数据类型以外，其余的全都是引用类型！</p>
-<p><font color=red size =5>注意：</font></p>
+<p><font color="red" size="5">注意：</font></p>
 <p>String str &#x3D; “Java666”;—&gt;值传递</p>
 <p>关于字符串做参数，也是看它的参数变量指向是否发生了变化，因为String的底层为final类型的char[]原因，当你在String s &#x3D; “aaa”或者String s &#x3D; new String(“aaa”)时，都会为s创建一个新的对象引用。但是调用了append（）方法时，是不会指向新的对象，会在原来的指向的对象上发生改变，与它共享的对象引用也会发生变化。</p>
 
